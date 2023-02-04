@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .navcl1{
@@ -66,4 +67,60 @@ body{
     .navbar,.navcl1{
         flex-direction: column;
     }
+}
+
+.main{
+    display: flex;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 15px;
+    background-color: #e4d4c8;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    align-content: center;
+}
+
+.card > img {
+    display: flex;
+    height: fit-content;
+    width: 90%;
+    margin: 5%;
+}
+
+.cardinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cardheader{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0%  5%;
+}
+
+.cardtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    margin: 1% 5% 5%;
 }
