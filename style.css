@@ -146,8 +146,9 @@ body{
     /* background-color: #E4D4C8; */
     justify-content: start;
     align-content: center;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding: 10px;
+    z-index: 1px;
 }
 
 
