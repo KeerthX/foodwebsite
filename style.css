@@ -14,6 +14,16 @@ body{
     color: #E4D4C8;
 }
 
+.subhead{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 75px;
+    color: #E4D4C8;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -78,14 +88,15 @@ body{
     background-color: #e4d4c8;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     min-width: 300px;
 }
 
@@ -139,7 +150,8 @@ body{
 .scroll-container{
     display: flex;
     width: 80%;
-    margin-top: 25px;
+    height: auto;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -175,6 +187,13 @@ body{
 
 .scrollele > img{
     border-radius: 10px;
+    transition: all 300ms;
+    
+}
+
+.scrollele > img:hover{
+    border-radius: 45px;
+    transform: scale(1.5);
 }
 
 .scrolltitle{
