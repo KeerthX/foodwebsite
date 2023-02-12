@@ -1,8 +1,22 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: #1B1821;
+    background: transparent;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("bg.png");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .header{
     display: flex;
@@ -29,7 +43,6 @@ body{
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-top: 10px;
 }
 
 .navcl1{
@@ -78,14 +91,17 @@ body{
     }
 }
 
+.specials{
+    background-color: #e4d4c8;
+
+}
+
 .cards-container{
     display: flex;
     width: 50%;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
-    background-color: #e4d4c8;
     justify-content: center;
     align-content: center;
     overflow: hidden;
@@ -150,16 +166,16 @@ body{
 .scroll-container{
     display: flex;
     width: 80%;
-    height: auto;
+    height: 350px;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
-    /* background-color: #E4D4C8; */
     justify-content: start;
+    justify-items: center;
     align-content: center;
+    align-items: center;
     overflow-x: scroll;
-    padding: 10px;
+    padding: 5px;
     z-index: 1px;
 }
 
@@ -176,6 +192,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0% 1%;
+    transition: all 300ms;
 }
 
 
@@ -187,15 +204,7 @@ body{
 
 .scrollele > img{
     border-radius: 10px;
-    transition: all 300ms;
-    
 }
-
-.scrollele > img:hover{
-    border-radius: 45px;
-    transform: scale(1.5);
-}
-
 .scrolltitle{
     display: flex;
     font-size: 25px;
@@ -205,4 +214,16 @@ body{
     font-weight: bold;
     font-style: italic;
     margin: 0%  5%;
+}
+
+.scroll-container >.scrollele:hover{
+    margin: 25px;
+    transform: scale(1.25);
+}
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 250px;
 }
