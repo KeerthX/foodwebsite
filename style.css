@@ -245,26 +245,26 @@ body {
 
 .footer {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
-    height: 300px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
 }
 
-.footer1{
-    background-color: #E4D4C8;
-    display: flex;
-    width: 25%;
-    height: 300px;
-}
-.footer2{
-    background-color: #d56610;
-    display: flex;
-    width: 25%;
-    height: 300px;
-}
-.footer3{
-    background-color: #E4D4C8;
-    display: flex;
-    width: 50%;
-    height: 300px;
+.footertext{
+    color: #E4D4C8;
+    font-size: 85px;
+    font-weight: 300;
 }
 
+.icons{
+    color: #E4D4C8;
+    font-size: 50px;
+}
+
+.icons > i{
+    margin: 0px 10px;
+}
