@@ -30,13 +30,26 @@ body {
 }
 
 .subhead {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-content: center;
     align-items: center;
     margin-top: 15px;
     font-size: 75px;
     color: #E4D4C8;
+}
+
+.subhead::before{
+    content: ' ';
+    background-color: #e4d4c8;
+    height: 2px;
+    width: 100%;
+}
+.subhead::after{
+    content: ' ';
+    background-color: #e4d4c8;
+    height: 2px;
+    width: 100%;
 }
 
 .navbar {
@@ -111,7 +124,7 @@ body {
 
 .specials {
     background-color: #e4d4c8;
-
+color: black;
 }
 
 .cards-container {
@@ -143,6 +156,7 @@ body {
 }
 
 .cardinfo {
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,6 +174,7 @@ body {
 .cardtext {
     display: flex;
     align-items: center;
+    color: black;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -170,16 +185,19 @@ body {
 @media (width < 1000px) {
     .cards-container {
         flex-direction: column;
+        color: black;
     }
 
     .card {
         width: 100%;
+        color: black;
     }
 }
 
 @media (width < 550px) {
     .cards-container {
         width: 90%;
+        color: black;
     }
 }
 
@@ -255,9 +273,23 @@ body {
 }
 
 .footertext{
+    display: grid;
     color: #E4D4C8;
-    font-size: 85px;
+    font-size: 80px;
     font-weight: 300;
+}
+
+.footertext::before{
+    content: ' ';
+    background-color: #e4d4c8;
+    height: 2px;
+    width: 100%;
+}
+.footertext::after{
+    content: ' ';
+    background-color: #e4d4c8;
+    height: 2px;
+    width: 100%;
 }
 
 .icons{
@@ -268,3 +300,13 @@ body {
 .icons > i{
     margin: 0px 10px;
 }
+
+a:link, a:visited {
+    color: #E4D4C8;
+    text-decoration: underline;
+    cursor: auto;
+  }
+  
+  a:link:active, a:visited:active {
+    color: #E4D4C8;
+  }
